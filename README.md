@@ -1,6 +1,8 @@
 # Discord.js BOT templates
 Templates para bots de discord para fácil implementação de features
 
+Se deseja ver alguma outra template nesse repositório ou teve algum problema usando-as, sinta-se livre para me mandar uma mensagem no discord: ``kp#3343``
+
 ## Templates:
 - [x] Ticket
 - [ ] Autenticação
