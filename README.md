@@ -4,23 +4,24 @@ Templates para bots de discord para fácil implementação de features
 Se deseja ver alguma outra template nesse repositório ou teve algum problema usando-as, sinta-se livre para me mandar uma mensagem no discord: ``kp#3343``
 
 ## Templates:
-- [x] Ticket
+- [x] Anúncios
 - [ ] Autenticação
 - [ ] Comandos de moderação
-- [ ] Anúncios
+- [ ] JSON handler
 - [ ] Sugestões
-- [ ] XP (JSON Handler)
+- [x] Ticket
 
 ## Demonstração
 Nas demonstrações foram usados os seguintes valores:
+
 ```js
 const prefix = "."
 const color = "#2F3136"
 ```
 
-- ### Ticket
+- ### Anúncios
 
-![Ticket Example](assets/ticket.gif)
+![Anúncio Example](assets/anuncio.gif)
 
 - ### Autenticação
 
@@ -30,7 +31,7 @@ Em desenvolvimento...
 
 Em desenvolvimento...
 
-- ### Anúncios
+- ### JSON handler
 
 Em desenvolvimento...
 
@@ -38,6 +39,6 @@ Em desenvolvimento...
 
 Em desenvolvimento...
 
-- ### XP
+- ### Ticket
 
-Em desenvolvimento...
+![Ticket Example](assets/ticket.gif)
