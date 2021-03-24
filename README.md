@@ -5,7 +5,7 @@ Se deseja ver alguma outra template nesse repositório ou teve algum problema us
 
 ## Templates:
 - [x] Anúncios
-- [ ] Autenticação
+- [x] Autenticação
 - [ ] Comandos de moderação
 - [ ] JSON handler
 - [ ] Sugestões
