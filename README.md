@@ -25,7 +25,7 @@ const color = "#2F3136"
 
 - ### Autenticação
 
-Em desenvolvimento...
+![Auth Example](assets/autenticacao.gif)
 
 - ### Comandos de moderação
 
