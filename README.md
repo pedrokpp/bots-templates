@@ -4,7 +4,7 @@ Templates para bots de discord para fácil implementação de features
 Se deseja ver alguma outra template nesse repositório ou teve algum problema usando-as, sinta-se livre para me mandar uma mensagem no discord: ``kp#3343``
 
 ## Templates:
-- [ ] Anti-Flood
+- [x] Anti-Flood
 - [x] Anúncios
 - [x] Autenticação
 - [ ] Comandos de moderação
@@ -22,7 +22,7 @@ const color = "#2F3136"
 
 - ### Anti-Flood
 
-Em desenvolvimento...
+Vídeo em produção...
 
 - ### Anúncios
 
