@@ -21,8 +21,7 @@ const color = "#2F3136"
 ```
 
 - ### Anti-Flood
-
-Vídeo em produção...
+![Anti-Flood Example](assets/anti-flood.gif)
 
 - ### Anúncios
 
