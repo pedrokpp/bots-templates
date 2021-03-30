@@ -1,29 +1,37 @@
-const { Client, MessageEmbed } = require('discord.js')
-const bot = new Client({partials: ["REACTION", "USER", "CHANNEL"]})
-const config = require('./config.json')
+const { Client, MessageEmbed } = require("discord.js");
+const bot = new Client({ partials: ["REACTION", "USER", "CHANNEL"] });
+const config = require("./config.json");
 
-let messageMap = new Map()
+let messageMap = new Map();
 
 bot.on("ready", () => {
-    console.log("BOT online!");
-})
+  console.log("BOT online!");
+});
 
-bot.on("message", async message => {
-    if (message.author.bot || !message.guild /*|| message.member.hasPermission("ADMINISTRATOR")*/) return
+bot.on("message", async (message) => {
+  if (
+    message.author.bot ||
+    !message.guild /*|| message.member.hasPermission("ADMINISTRATOR")*/
+  )
+    return;
 
-    let user = message.author
+  let user = message.author;
 
-    if (messageMap.get(user.id) == null) return messageMap.set(user.id, message.content)
+  if (messageMap.get(user.id) == null)
+    return messageMap.set(user.id, message.content);
 
-    if (messageMap.get(user.id) == message.content) {
-        let x = await user.send("Você não pode mandar uma mensagem com o mesmo conteúdo mais de uma vez")
-        messageMap.delete(user.id)
-        message.delete()
-        x.delete({timeout:9000})
-        return
-    }
-    
+  if (messageMap.get(user.id) == message.content) {
+    let x = await user.send(
+      "Você não pode mandar uma mensagem com o mesmo conteúdo mais de uma vez"
+    );
+    messageMap.delete(user.id);
+    message.delete();
+    x.delete({ timeout: 9000 });
+    return;
+  } else {
+    messageMap.set(user.id, message.content);
+    return;
+  }
+});
 
-})
-
-bot.login(config.token)
+bot.login(config.token);
