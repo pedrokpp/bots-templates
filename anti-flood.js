@@ -17,6 +17,7 @@ bot.on("message", async message => {
 
     if (messageMap.get(user.id) == message.content) {
         let x = await user.send("Você não pode mandar uma mensagem com o mesmo conteúdo mais de uma vez")
+        messageMap.delete(user.id)
         message.delete()
         x.delete({timeout:9000})
         return
